@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div {background-color: rgb(221, 221, 170);
+            width: 600px;
+            height: 400px;
+            padding: 10px;
+            margin-left: 60px;
+            margin-top: 60px;
+        }
+        h2 {
+            color:  rgb(148, 80, 80);
+        }
+.submit {
+    background-color: rgb(148, 80, 80);
+    color: white;
+    width: 150px;
+    height: 30px;
+
+}
+input {
+            margin:5px;
+         }
+        .text1 {
+            width: 500px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form action="submit_form.php" method="post">
+        <h2> A Contact Form</h2>
+        
+        <label for="name">Name (required)</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="mail">Email (required)</label>
+        <input type="email" name="mail" id="mail" required><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject"><br>
+    
+        <label for="message"></label>
+        <textarea class="text1" id="message" name="message"></textarea><br>
+
+        <input class="submit"; type="submit" value="Submit">
+        <input class="submit"; type="Reset" value="Reset">
+    </div>
+
+
+    </form>
+</body>
+</html>
